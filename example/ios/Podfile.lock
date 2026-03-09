@@ -1,22 +1,28 @@
 PODS:
   - Flutter (1.0.0)
-  - speech_recognition (0.3.0):
+  - permission_handler_apple (9.3.0):
+    - Flutter
+  - speech_recognition_kvc (1.0.0):
     - Flutter
 
 DEPENDENCIES:
-  - Flutter (from `/Users/rxlabz/dev/tools/flutter/bin/cache/artifacts/engine/ios`)
-  - speech_recognition (from `/Users/rxlabz/dev/projects/_open/speech_recognition/ios`)
+  - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - speech_recognition_kvc (from `.symlinks/plugins/speech_recognition_kvc/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: "/Users/rxlabz/dev/tools/flutter/bin/cache/artifacts/engine/ios"
-  speech_recognition:
-    :path: "/Users/rxlabz/dev/projects/_open/speech_recognition/ios"
+    :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  speech_recognition_kvc:
+    :path: ".symlinks/plugins/speech_recognition_kvc/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  speech_recognition: acf2b916cd7aff5d4b76a238740afe2aff85e6bc
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  speech_recognition_kvc: 645ccf912d5183f0419bc800968a4c67d4fe046e
 
-PODFILE CHECKSUM: cc70c01bca487bebd110b87397f017f3b76a89f1
+PODFILE CHECKSUM: b6c1777b8742f73e5cdad8789e3d9f4d8eaca881
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2

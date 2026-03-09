@@ -2,10 +2,10 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'speech_recognition'
-  s.version          = '0.3.0'
+  s.name             = 'speech_recognition_kvc'
+  s.version          = '1.0.0'
   s.summary          = 'Flutter Speech recognition plugin'
-  s.homepage         = 'https://github.com/NeKoFu/speech_recognition'
+  s.homepage         = 'https://github.com/NeKoFu/speech_recognition_kvc'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
@@ -16,6 +16,6 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
 end
 
