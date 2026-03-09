@@ -1,7 +1,9 @@
 ## 1.0.0
 
-- nullsafe version
-- updated to work with Flutter 3.32.1 and Dart 3.8.1
+- **Maintenance Fork**: Initial release of `speech_recognition_kvc`.
+- **Breaking Change**: Migrated to Null Safety.
+- **Compatibility**: Updated for Flutter 3.22.0+ and Dart 3.4.0+.
+- **Refactor**: Updated Android and iOS native code to support modern build environments.
 
 ## 0.3.0
 
