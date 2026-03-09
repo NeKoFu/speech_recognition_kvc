@@ -1,61 +1,72 @@
-# speech_recognition
+# speech_recognition_kvc
+
+[![pub package](https://img.shields.io/pub/v/speech_recognition_kvc.svg)](https://pub.dev/packages/speech_recognition_kvc)
+
+_This is a maintenance fork of the original [speech_recognition](https://pub.dev/packages/speech_recognition) plugin, which has been discontinued._
+
+## 🚀 Why this fork?
+
+The original library was no longer compatible with modern Flutter environments (Flutter 3.22+ / Dart 3.10+). To ensure the sustainability of my project, **Wano Collector** ([Android](https://play.google.com/store/apps/details?id=com.kavacode.wanocollector) | [iOS](https://apps.apple.com/fr/app/wano-collector/id1555954464)), and provide the community with a reliable bridge for speech-to-text, I've updated and maintained this version.
+
+_Credits to the original authors for the initial implementation._
+
+## Introduction
 
 A flutter plugin to use the speech recognition iOS10+ / Android 4.1+
 
-- [Basic Example](https://github.com/rxlabz/speech_recognition/tree/master/example)
-- [Sytody, speech to todo app](https://github.com/rxlabz/sytody)
+- [Basic Example](https://github.com/NeKoFu/speech_recognition_kvc/tree/master/example)
 
 ![screenshot](speech_reco_shots.png)
 
-## [Installation](https://pub.dartlang.org/packages/speech_recognition#pub-pkg-tab-installing)
+## [Installation](https://pub.dartlang.org/packages/speech_recognition_kvc#pub-pkg-tab-installing)
 
 1. Depend on it
-Add this to your package's pubspec.yaml file:
+   Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  speech_recognition: "^0.3.0"
+  speech_recognition: "^1.0.0"
 ```
 
 2. Install it
-You can install packages from the command line:
+   You can install packages from the command line:
 
 ```
 $ flutter packages get
 ```
 
 3. Import it
-Now in your Dart code, you can use:
+   Now in your Dart code, you can use:
 
 ```dart
-import 'package:speech_recognition/speech_recognition.dart';
+import 'package:speech_recognition_kvc/speech_recognition_kvc.dart';
 ```
 
 ## Usage
 
 ```dart
 //..
-_speech = SpeechRecognition();
+_speech = SpeechRecognitionKVC();
 
 // The flutter app not only call methods on the host platform,
 // it also needs to receive method calls from host.
-_speech.setAvailabilityHandler((bool result) 
+_speech.setAvailabilityHandler((bool result)
   => setState(() => _speechRecognitionAvailable = result));
 
 // handle device current locale detection
 _speech.setCurrentLocaleHandler((String locale) =>
  setState(() => _currentLocale = locale));
 
-_speech.setRecognitionStartedHandler(() 
+_speech.setRecognitionStartedHandler(()
   => setState(() => _isListening = true));
 
-// this handler will be called during recognition. 
+// this handler will be called during recognition.
 // the iOS API sends intermediate results,
 // On my Android device, only the final transcription is received
-_speech.setRecognitionResultHandler((String text) 
+_speech.setRecognitionResultHandler((String text)
   => setState(() => transcription = text));
 
-_speech.setRecognitionCompleteHandler(() 
+_speech.setRecognitionCompleteHandler(()
   => setState(() => _isListening = false));
 
 // 1st launch : speech recognition permission / initialization
@@ -91,6 +102,7 @@ _speech.setErrorHandler((SpeechRecognitionError e) => print('error: $e'));
 #### :warning: iOS : Swift 4.2 project
 
 infos.plist, add :
+
 - Privacy - Microphone Usage Description
 - Privacy - Speech Recognition Usage Description
 
@@ -110,7 +122,7 @@ infos.plist, add :
 ## Limitation
 
 On iOS, by default the plugin is configured for French, English, Russian, Spanish, Italian.
-On Android, without additional installations, it will probably works only with the default device locale. 
+On Android, without additional installations, it will probably works only with the default device locale.
 
 ## Troubleshooting
 

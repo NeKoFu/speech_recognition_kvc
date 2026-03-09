@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\Dev\flutter"
-export "FLUTTER_APPLICATION_PATH=H:\_Taff\Tetrahys\Sources\wano\Application Mobile\custom_packages\speech_recognition\example"
+export "FLUTTER_APPLICATION_PATH=H:\_Taff\Tetrahys\Sources\_packages\speech_recognition_kvc\example"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"

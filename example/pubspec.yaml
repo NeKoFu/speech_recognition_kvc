@@ -1,15 +1,15 @@
 name: speech_recognition_example
-description: Demonstrates how to use the speech_recognition plugin.
+description: Demonstrates how to use the speech_recognition_kvc plugin.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.16.0-80.1.beta <3.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  speech_recognition:
+  speech_recognition_kvc:
     path: ../
 
 # For information on the generic Dart part of this file, see the

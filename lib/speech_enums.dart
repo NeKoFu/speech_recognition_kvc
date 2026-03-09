@@ -3,7 +3,7 @@ class SpeechRecognitionError {
   factory SpeechRecognitionError.fromInt(int value) {
     try {
       return values[value];
-    } catch(e) {
+    } catch (e) {
       return SpeechRecognitionError.unknown;
     }
   }
@@ -14,7 +14,8 @@ class SpeechRecognitionError {
   static const SpeechRecognitionError unknown = SpeechRecognitionError._(0);
 
   /// Network operation timed out.
-  static const SpeechRecognitionError networkTimeout = SpeechRecognitionError._(1);
+  static const SpeechRecognitionError networkTimeout =
+      SpeechRecognitionError._(1);
 
   /// Other network related errors.
   static const SpeechRecognitionError network = SpeechRecognitionError._(2);
@@ -29,7 +30,8 @@ class SpeechRecognitionError {
   static const SpeechRecognitionError client = SpeechRecognitionError._(5);
 
   /// No speech input.
-  static const SpeechRecognitionError clientTimeout = SpeechRecognitionError._(6);
+  static const SpeechRecognitionError clientTimeout =
+      SpeechRecognitionError._(6);
 
   /// No recognition result matched.
   static const SpeechRecognitionError noMatch = SpeechRecognitionError._(7);
@@ -38,7 +40,8 @@ class SpeechRecognitionError {
   static const SpeechRecognitionError busy = SpeechRecognitionError._(8);
 
   /// Insufficient permissions.
-  static const SpeechRecognitionError noPermission = SpeechRecognitionError._(9);
+  static const SpeechRecognitionError noPermission =
+      SpeechRecognitionError._(9);
 
   static const List<SpeechRecognitionError> values = <SpeechRecognitionError>[
     unknown,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:speech_recognition/speech_recognition.dart';
+import 'package:speech_recognition_kvc/speech_recognition_kvc.dart';
 
 void main() {
   runApp(new MyApp());
@@ -49,11 +49,8 @@ class _MyAppState extends State<MyApp> {
     if (PermissionStatus.granted == status) {
       setState(() => _micPermission = true);
     } else if (PermissionStatus.denied == status ||
-      PermissionStatus.restricted == status) {
-      await [
-        Permission.microphone,
-        Permission.speech
-      ].request();
+        PermissionStatus.restricted == status) {
+      await [Permission.microphone, Permission.speech].request();
       status = await Permission.microphone.status;
 
       if (PermissionStatus.granted == status) {
@@ -140,16 +137,18 @@ class _MyAppState extends State<MyApp> {
     setState(() => selectedLang = lang);
   }
 
-  Widget _buildButton({String label = "", VoidCallback? onPressed}) => new Padding(
-      padding: new EdgeInsets.all(12.0),
-      child: new ElevatedButton(
-        style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan.shade600),
-        onPressed: onPressed,
-        child: new Text(
-          label,
-          style: const TextStyle(color: Colors.white),
-        ),
-      ));
+  Widget _buildButton({String label = "", VoidCallback? onPressed}) =>
+      new Padding(
+          padding: new EdgeInsets.all(12.0),
+          child: new ElevatedButton(
+            style:
+                ElevatedButton.styleFrom(backgroundColor: Colors.cyan.shade600),
+            onPressed: onPressed,
+            child: new Text(
+              label,
+              style: const TextStyle(color: Colors.white),
+            ),
+          ));
 
   void start() => _speech
       .listen(locale: selectedLang.code)
@@ -175,7 +174,8 @@ class _MyAppState extends State<MyApp> {
 
   void onRecognitionResult(String text) => setState(() => transcription = text);
 
-  void onRecognitionComplete(String text) => setState(() => _isListening = false);
+  void onRecognitionComplete(String text) =>
+      setState(() => _isListening = false);
 
   void errorHandler(SpeechRecognitionError error) => activateSpeechRecognizer();
 }

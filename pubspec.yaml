@@ -1,26 +1,25 @@
-name: speech_recognition
+name: speech_recognition_kvc
 description: A flutter plugin to use the speech recognition on iOS and Android
-version: 1.0.1
+version: 1.0.0
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
-  flutter: ">=2.5.0"
+  sdk: '>=3.4.0 <4.0.0'
   
 dependencies:
   flutter:
     sdk: flutter
-  permission_handler: ^11.0.0
+  permission_handler: ^12.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   plugin:
     platforms:
       android:
-        package: com.kavacode.flutter.speechrecognition
+        package: com.kavacode.speechrecognition
         pluginClass: SpeechRecognitionPlugin
       ios:
         pluginClass: SpeechRecognitionPlugin
