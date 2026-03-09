@@ -6,13 +6,13 @@ _This is a maintenance fork of the original [speech_recognition](https://pub.dev
 
 ## 🚀 Why this fork?
 
-The original library was no longer compatible with modern Flutter environments (Flutter 3.22+ / Dart 3.4+). To ensure the sustainability of my project, **Wano Collector** ([Android](https://play.google.com/store/apps/details?id=com.kavacode.wanocollector) | [iOS](https://apps.apple.com/fr/app/wano-collector/id1555954464)), and provide the community with a reliable bridge for speech-to-text, I've updated and maintained this version.
+The original library was no longer compatible with modern Flutter environments. To ensure the sustainability of my project, **Wano Collector** ([Android](https://play.google.com/store/apps/details?id=com.kavacode.wanocollector) | [iOS](https://apps.apple.com/fr/app/wano-collector/id1555954464)), and provide the community with a reliable bridge for speech-to-text, I've updated and maintained this version.
 
 _Credits to the original authors for the initial implementation._
 
 ## Introduction
 
-A flutter plugin to use the speech recognition iOS10+ / Android 4.1+
+A flutter plugin to use the speech recognition.
 
 - [Basic Example](https://github.com/NeKoFu/speech_recognition_kvc/tree/main/example)
 
