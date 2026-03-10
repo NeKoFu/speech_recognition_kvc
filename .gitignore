@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------
-# Package Root (Dart/Flutter)
+# Dart / Flutter (Standard)
 # ------------------------------------------------------------------------------
 .dart_tool/
 .packages
@@ -9,57 +9,19 @@
 .pub/
 build/
 
-# On ignore le lockfile à la racine (standard pour un package)
+# On ignore le lockfile à la racine (recommandé pour un package)
 /pubspec.lock
 
 # ------------------------------------------------------------------------------
-# Android
+# Android / iOS / IDE (Global)
 # ------------------------------------------------------------------------------
 **/android/local.properties
-**/android/key.properties
 **/android/GeneratedPluginRegistrant.java
 **/android/.gradle
-**/android/captures/
-**/android/**/*.keystore
-**/android/**/*.jks
-
-# Wrappers Gradle : ON GARDE (Important)
-!**/android/gradlew
-!**/android/gradlew.bat
-!**/android/**/gradle-wrapper.jar
-
-# ------------------------------------------------------------------------------
-# iOS / macOS / Web
-# ------------------------------------------------------------------------------
 **/ios/Flutter/Generated.xcconfig
 **/ios/Flutter/flutter_export_environment.sh
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/GeneratedPluginRegistrant.*
 **/ios/Pods/
-**/ios/.generated/
-**/ios/**/*.moved-aside
-**/ios/**/xcuserdata
-**/ios/**/DerivedData/
-
-# MacOS
-.DS_Store
-**/macos/Flutter/ephemeral/
-
-# ------------------------------------------------------------------------------
-# Tools & IDE
-# ------------------------------------------------------------------------------
-# IntelliJ
-*.iml
-*.ipr
-*.iws
 .idea/
-
-# VS Code
 .vscode/
-
-# Divers
+.DS_Store
 *.log
-*.swp
-.history
-.buildlog/
