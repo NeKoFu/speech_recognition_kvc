@@ -8,7 +8,12 @@
 .pub-cache/
 .pub/
 build/
-pubspec.lock
+/pubspec.lock
+
+# ------------------------------------------------------------------------------
+# Exception for the folder /example
+# ------------------------------------------------------------------------------
+!example/pubspec.lock
 
 # ------------------------------------------------------------------------------
 # Android
@@ -25,7 +30,7 @@ pubspec.lock
 !**/android/**/gradle-wrapper.jar
 
 # ------------------------------------------------------------------------------
-# iOS / macOS
+# iOS / macOS / Web
 # ------------------------------------------------------------------------------
 **/ios/Flutter/Generated.xcconfig
 **/ios/Flutter/flutter_export_environment.sh
