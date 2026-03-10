@@ -25,7 +25,7 @@ A flutter plugin to use the speech recognition.
 
 ```yaml
 dependencies:
-  speech_recognition_kvc: "^1.0.1"
+  speech_recognition_kvc: "^1.0.2"
 ```
 
 2. Install it
@@ -131,6 +131,6 @@ If you get a MissingPluginException, try to `flutter build apk` on Android, or `
 ## Getting Started
 
 For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+[documentation](https://flutter.io/).
 
 For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).

@@ -31,6 +31,7 @@ class _MyAppState extends State<MyApp> {
 
   bool _speechRecognitionAvailable = false;
   bool _isListening = false;
+  // ignore: unused_field
   bool _micPermission = true; // false only when user denied access
 
   String transcription = '';

@@ -4,9 +4,9 @@ import 'package:flutter/services.dart';
 import 'speech_enums.dart';
 export 'speech_enums.dart';
 
-typedef void AvailabilityHandler(bool result);
-typedef void StringResultHandler(String text);
-typedef void ErrorHandler(SpeechRecognitionError error);
+typedef AvailabilityHandler = void Function(bool result);
+typedef StringResultHandler = void Function(String text);
+typedef ErrorHandler = void Function(SpeechRecognitionError error);
 
 /// the channel to control the speech recognition
 class SpeechRecognition {

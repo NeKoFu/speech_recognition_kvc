@@ -1,3 +1,8 @@
+## 1.0.2
+
+- Added the `/example` directory
+- Refactored internal structure to align with 2026 Flutter standards.
+
 ## 1.0.1
 
 - Switch generic "Your Company" copyright license to MIT license.
