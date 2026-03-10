@@ -25,7 +25,7 @@ A flutter plugin to use the speech recognition.
 
 ```yaml
 dependencies:
-  speech_recognition: "^1.0.0"
+  speech_recognition_kvc: "^1.0.1"
 ```
 
 2. Install it

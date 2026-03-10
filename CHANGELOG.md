@@ -1,3 +1,10 @@
+## 1.0.1
+
+- Switch generic "Your Company" copyright license to MIT license.
+- Update documentation and README.
+- Add unit tests.
+- Upgrade Java/JVM target to 21 and align SDK versions with Flutter.
+
 ## 1.0.0
 
 - **Maintenance Fork**: Initial release of `speech_recognition_kvc`.

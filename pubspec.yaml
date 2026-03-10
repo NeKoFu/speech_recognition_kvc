@@ -1,6 +1,6 @@
 name: speech_recognition_kvc
 description: A flutter plugin to use the speech recognition on iOS and Android
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/NeKoFu/speech_recognition_kvc
 repository: https://github.com/NeKoFu/speech_recognition_kvc
 
